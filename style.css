@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('fresh-cocktails.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#user-inp {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.results-container {
+  display: grid;
+  gap: 20px;
+}
+
+.cocktail-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cocktail-card:hover {
+  transform: scale(1.05);
+}
+
+.cocktail-card img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  #user-inp {
+    margin-bottom: 10px;
+  }
+}
